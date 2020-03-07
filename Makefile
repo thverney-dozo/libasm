@@ -3,7 +3,10 @@ NAME = libasm.a
 NFLAGS = nasm -f macho64
 CFLAGS = gcc -Wall -Wextra -Werror main.c
 
-SRC = ft_strlen.s \
+SRC =	ft_strlen.s \
+		ft_strcpy.s \
+		ft_strcmp.s \
+		ft_write.s  \
 
 OBJ = $(SRC:%.s=%.o)
 
